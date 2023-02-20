@@ -19,7 +19,7 @@ interface areaMapType {
 
 //面积图
 function draw(canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D, data: any[], parInfo: HTMLDivElement, SE: SE) {
-    const width = parInfo.clientWidth;
+    const width = parInfo?.clientWidth;
     const height = width / 2;
     const len = data.length;
     const { startX, startY, endX, endY } = SE;

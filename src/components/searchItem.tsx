@@ -73,7 +73,7 @@ function SearchItem(props: searchItemType) {
                     width: "100%",
                 }}>
                 {loading ? <Skeleton variant="rectangular" sx={{
-                    width: "100%", height: areaMapBoxRef.current ? areaMapBoxRef.current.clientWidth / 2 :
+                    width: "100%", height: areaMapBoxRef.current ? areaMapBoxRef.current?.clientWidth / 2 :
                         {
                             xs: "200px",
                             sm: "150px",
